@@ -4,18 +4,16 @@ Aplicación de Android con Kotlin y Jetpack Compose para practicar animaciones d
 
 ## Contenido
 
-- `AnimatedVisibility`: mostrar y ocultar una tarjeta con `fadeIn` y `fadeOut`.
+- `AnimatedVisibility`: tarjeta con `fadeIn` y `fadeOut`.
 - `animateColorAsState`: transición elástica entre azul y verde.
-- `animateDpAsState` y `Modifier.offset`: cambiar posición y tamaño de un elemento.
-- `AnimatedContent`: alternar entre Cargando, Contenido y Error.
-- **Nebula Quest**: prototipo de videojuego que combina cambios de color, posición, rotación, escala y visibilidad al atacar.
-- **Codelab de animaciones**: repetición infinita, entrada/salida personalizada, expansión del contenido y gesto horizontal gestionado con `Animatable`.
+- `animateDpAsState` y `Modifier.offset`: cambio de posición y tamaño.
+- `AnimatedContent`: estados Cargando, Contenido y Error.
+- **Nebula Quest**: prototipo de videojuego que combina color, posición, giro, escala y visibilidad.
+- **Codelab de animaciones**: repetición infinita, entrada/salida, expansión y gesto horizontal con `Animatable`.
 
 ## Ejecutar
 
-Abrir la carpeta `Lab13Animaciones` en Android Studio y ejecutar `app` en un emulador o dispositivo. El proyecto se creó con la plantilla Empty Activity de Jetpack Compose.
-
-También se puede compilar desde la terminal de Android Studio:
+Abrir `Lab13Animaciones` en Android Studio y ejecutar `app` en un emulador o dispositivo. Para compilar desde la terminal:
 
 ```powershell
 .\gradlew.bat assembleDebug
@@ -23,8 +21,10 @@ También se puede compilar desde la terminal de Android Studio:
 
 ## Evidencias
 
-La carpeta `evidence` contiene capturas PNG tomadas directamente del emulador Android y una grabación MP4 de la interacción. Las capturas del código se guardan allí desde Android Studio.
+En `evidence` están las capturas PNG reales tomadas del emulador y la grabación completa de la demostración: [Lab13_DemoCompleta.mp4](evidence/Lab13_DemoCompleta.mp4). El archivo [Lab13_Animaciones.mp4](evidence/Lab13_Animaciones.mp4) conserva la grabación corta anterior. En el DOCX original inserté varias capturas de cada ejercicio dentro de sus recuadros.
 
-## Codelab de referencia
+El código fuente principal está en `app/src/main/java/com/tecsup/lab13animaciones/MainActivity.kt`.
 
-Se siguieron las APIs descritas en [Cómo animar elementos en Jetpack Compose](https://developer.android.com/codelabs/jetpack-compose-animation?hl=es-419), de Android Developers.
+## Codelab
+
+[Cómo animar elementos en Jetpack Compose](https://developer.android.com/codelabs/jetpack-compose-animation?hl=es-419), Android Developers.
